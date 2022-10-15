@@ -1,0 +1,33 @@
+.ipl_logo {
+    height: 120px !important;
+}
+
+.table_wrapper {
+    width: 100%;
+}
+
+.tab_wrapper {}
+
+.nav-pills {
+    width: 30%;
+    background: var(--primary-color);
+    padding: 4px !important;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.nav-pills li button {
+    border-radius: 3px !important;
+    font-size: 16px;
+    font-weight: 600;
+    color: #fff;
+}
+
+.nav-pills li button:hover {
+    color: #fff;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background: #eb4d4b !important;
+}

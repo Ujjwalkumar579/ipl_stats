@@ -1,0 +1,117 @@
+.match_single_list {
+    background: #fff;
+    padding: 15px 10px;
+    margin-bottom: 10px;
+    border: 1px dashed rgb(165, 165, 165);
+}
+
+.ipl_dates>span,
+.ipl_dates>p {
+    font-weight: 600;
+    color: rgb(128, 128, 128);
+}
+
+.ipl_dates>span:nth-child(2) {
+    color: #eb4d4b;
+}
+
+.ipl_dates>p {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+.ipl_teams {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ipl_teams>span {
+    font-weight: 700;
+    font-size: 15px;
+    text-transform: uppercase;
+}
+
+.ipl_teams .team1,
+.ipl_teams .team2 {
+    width: 200px;
+    text-align: center;
+}
+
+.ipl_teams .team1 p:nth-child(2),
+.ipl_teams .team2 p:nth-child(2) {
+    margin-bottom: 0;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.ipl_teams .team1 .logo_team1,
+.ipl_teams .team2 .logo_team2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-weight: 600;
+}
+
+.ipl_teams .team1 p:nth-child(1),
+.ipl_teams .team2 p:nth-child(1) {
+    width: 40px;
+    height: 40px;
+    background: #eb4d4b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50px;
+}
+
+.ipl_match_detail_button button {
+    padding: 8px 15px;
+    font-weight: 600;
+    border: none;
+    border: 1px solid rgb(202, 202, 202);
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: 0.3s all ease-in-out;
+    /* background-color: #130f40; */
+    background-color: var(--primary-color);
+    color: #fff;
+}
+
+.ipl_match_detail_button button:hover {
+    background-color: #eb4d4b;
+    color: #fff;
+    border: 1px solid #eb4d4b;
+    transition: 0.3s all ease-in-out;
+}
+
+.ipl_match_detail_button button svg {
+    margin-bottom: 3px;
+}
+
+.winnig_team span {
+    font-weight: 500;
+    color: #192a56;
+    font-size: 13px;
+}
+
+.team_logo {
+    height: 40px !important;
+}
+
+@media screen and (max-width: 992px) {
+    .detail_btn {
+        order: 6 !important;
+    }
+
+    .match_dates {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .winnig_team {
+        margin-bottom: 10px;
+    }
+}

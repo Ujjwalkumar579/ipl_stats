@@ -1,0 +1,56 @@
+.side_bar_filter {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    padding: 10px;
+    background: var(--primary-color);
+    position: sticky;
+    top: 30px;
+}
+
+.side_bar_filter>p {
+    font-weight: 700;
+    font-size: 18px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 0;
+    color: #fff;
+    letter-spacing: 0.5px;
+}
+
+.side_bar_filter>div>select {
+    border-radius: 0px;
+}
+
+.side_bar_filter>div>select:focus {
+    box-shadow: none;
+}
+
+.load_more button {
+    background: var(--primary-color);
+    color: #fff;
+    transition: 0.3s all ease-in-out;
+    font-weight: 600;
+}
+
+.load_more button:hover {
+    background: #eb4d4b;
+    transition: 0.3s all ease-in-out;
+    color: #fff;
+}
+
+.load_more button svg {
+    font-weight: 600;
+}
+
+
+@media screen and (max-width: 992px) {
+
+    .side_bar_filter {
+        margin-bottom: 15px;
+    }
+
+    .nav-pills {
+        width: 90% !important;
+    }
+}
