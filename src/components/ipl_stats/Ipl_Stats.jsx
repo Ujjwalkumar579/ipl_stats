@@ -19,7 +19,7 @@ import ktk from "../../imgs/kochi-tuskers-kerala-logo.png";
 import pwi from "../../imgs/pune-warriors-india-logo.png";
 import { MdExpandMore } from "react-icons/md";
 
-const Ipl_Stats = ({ data }) => {
+const Ipl_Stats = ({ data, arr_of_year, arr_of_teams, arr_of_venue, matchDetail, setMatchDerail }) => {
   const [visible, setVisible] = useState(10);
   const [filterData, setFilterData] = useState({
     by_year: "",
@@ -30,23 +30,7 @@ const Ipl_Stats = ({ data }) => {
     setVisible(visible + 5);
   };
 
-  let arr_of_year = []; // retrive years from data array to map in select tag sort by year &&
-  let arr_of_teams = []; // retrive teams name from data to map in select tag for sort by team  &&
-  let arr_of_venue = []; // retrive city name from data to map in select tag for sort by city (venue)
-  data.forEach((ele) => {
-    if (!arr_of_year.includes(ele.season)) {
-      arr_of_year.push(ele.season);
-    }
-    if (!arr_of_teams.includes(ele.team1)) {
-      arr_of_teams.push(ele.team1);
-    }
-    if (!arr_of_venue.includes(ele.city)) {
-      arr_of_venue.push(ele.city);
-    }
-  });
-  arr_of_year.sort((a, b) => {
-    return a - b;
-  });
+
 
   const operationsOnElement = (ele) => {
     // getting the dates in right formate
@@ -353,10 +337,12 @@ const Ipl_Stats = ({ data }) => {
                     return (
                       <Single_Match
                         key={i}
-                        date={result}
+                        date={result} 
                         element={ele}
                         team1_logo={result.team1_logo}
                         team2_logo={result.team2_logo}
+                        matchDetail={matchDetail}
+                        setMatchDerail={setMatchDerail}
                       />
                     );
                   })}

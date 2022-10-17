@@ -1,0 +1,142 @@
+.modal-content {
+    border-radius: 0px !important;
+}
+
+.modal-title {
+    color: var(--primary-color);
+    font-weight: 700 !important;
+}
+
+.btn-close {
+    font-weight: 700;
+    box-shadow: none;
+    outline: none;
+}
+
+.btn-close:focus {
+    box-shadow: none;
+    outline: none;
+}
+
+.team1_detail img,
+.team2_detail img {
+    height: 150px !important;
+}
+
+.team1_detail,
+.team2_detail {
+    text-align: center;
+}
+
+.team1_detail p,
+.team2_detail p {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.team_details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.team_details div:nth-child(2) img {
+    height: 60px !important
+}
+
+.team1,
+.team2 {
+    text-align: center;
+}
+
+.fade.modal-backdrop.show {
+    opacity: 0.8 !important;
+}
+
+.team_details div:nth-child(2) p {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.date_of_match span {
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.score_detail {
+    text-align: center;
+    margin: 10px;
+}
+
+.score_detail p {
+    font-weight: 600;
+    font-size: 15px;
+    color: var(--primary-color);
+}
+
+.stripe {
+    width: 100%;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 5px 20px;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+
+.stripe p {
+    font-size: 16px;
+}
+
+.stripe .name_img {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.stripe .name_img span {
+    font-weight: 500;
+    text-decoration: underline;
+    margin-top: 10px;
+}
+
+.stripe .name_img p {
+    /* margin-top: px; */
+}
+
+.name_img img {
+    /* background: red; */
+    padding: 2px;
+    /* border-radius: 50px; */
+}
+
+.toss_decision .name_img img,
+.man_of_the_match .name_img img {
+    padding: 15px;
+}
+
+.match_other_details ul {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.match_other_details ul li {
+    list-style: none;
+}
+
+.match_other_details ul li span:nth-child(1) {
+    color: green;
+    /* width: 100px; */
+}
+
+.match_other_details ul li span:nth-child(2) {
+    color: var(--primary-color);
+}

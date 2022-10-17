@@ -1,7 +1,13 @@
+/* eslint-disable react/jsx-pascal-case */
 import React from "react";
 import "./Single_Match.css";
 import { FiChevronRight } from "react-icons/fi";
+import { Link } from 'react-router-dom'
+
+import Match_Detail from "../match_detail/Match_Detail";
 const Single_Match = ({ date, element, team1_logo, team2_logo }) => {
+  const [modalShow, setModalShow] = React.useState(false);
+
   return (
     <div className="match_single_list">
       <div className="container">
@@ -47,9 +53,17 @@ const Single_Match = ({ date, element, team1_logo, team2_logo }) => {
           </div>
           <div className="col-lg-3 detail_btn d-flex align-items-end justify-content-center">
             <div className="ipl_match_detail_button">
-              <button>
+              <button onClick={() => setModalShow(true)}>
                 More Details <FiChevronRight />
               </button>
+              <Match_Detail
+                date={date}
+                element={element}
+                team1_logo={team1_logo}
+                team2_logo={team2_logo}
+                show={modalShow}
+                onHide={() => setModalShow(false)}
+              />
             </div>
           </div>
 

@@ -1,0 +1,40 @@
+.matches_in_year_head {
+    margin: 0px 50px;
+}
+
+.matches_in_year {
+    margin-bottom: 50px;
+}
+
+.matches_in_year h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.win_in_year_by_team_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 50px;
+    text-align: center;
+    /* font-weight: 700; */
+}
+
+.win_in_year_by_team_head h2 {
+    text-transform: uppercase;
+    font-weight: 700;
+    /* margin-top: 50px; */
+    /* margin-bottom: 30px; */
+    color: var(--primary-color);
+}
+
+.win_in_year_by_team_head select {
+    width: 200px;
+}
+
+.win_in_year_by_team_head p {
+    font-size: 11px;
+}
